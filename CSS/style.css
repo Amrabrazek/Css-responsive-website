@@ -12,6 +12,16 @@ html, body {
     background-position: center;
 }
 
+img {
+    object-fit: cover;
+    object-position: center;
+    max-width: 100%;
+    height:85%
+
+}
+
+
+
 .parent {
     display: grid;
     height: 100%;
@@ -28,6 +38,7 @@ html, body {
     background-color: red;
     position: sticky;
     top: 0;
+    z-index: 1;
     }
 
 .div2 { 
@@ -64,14 +75,37 @@ background-color: gray;
     gap: 0.5rem;
 }
 
-.div5 div {
+.div5 .item {
+    position: relative;
     border: 2px solid red;
     width: 220px;
     height: 165px;
     box-sizing: border-box;
     margin:0.3rem;
+    top:20px;
+    transition: top 1s 1s;
 }
 
+.div5 .item:hover {
+    border: 2px solid yellow;
+    top:0px;
+    transition: top 1s;
+
+}
+
+/* .div5 .text {
+    border: 2px solid blue;
+    width: 220px;
+    height: 2rem;
+    box-sizing: border-box;
+    margin:0.3rem;
+} */
+
+.text {
+    width: 100%;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
 
 
 /* body {
@@ -82,29 +116,29 @@ background-color: gray;
     /* border: 2px, solid black;  */
  /* } */
 
-@media screen and (min-width:500px) {
+@media screen and (min-width:450px) {
 
-    .div5 div {
+    .div5 .item {
         width: 300px;
         height: 225px;
-    /* }
-    .parent {
-        grid-template-columns: 0.4fr repeat(3, 1fr) 0.4fr;
+
+
+}
+    /* .div5 .text {
+        width: 300px;
     } */
-
-}
 }
 
 
-@media screen and (min-width:1000px) {
+@media screen and (min-width:1200px) {
 
-    .div5 div {
+    .div5 .item {
         width: 400px;
         height: 300px;
     }
 
-    /* .parent {
-        grid-template-columns: 0.4fr repeat(3, 1fr) 0.4fr;
+    /* .div5 .text {
+        width: 400px;
     } */
 
 } 
