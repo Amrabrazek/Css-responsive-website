@@ -11,23 +11,99 @@ html, body {
 .image {
     width: 100wh;
     height: 100vh;
-    background-image:  url("https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/0x0.jpg?format=jpg&crop=4560,2565,x790,y784,safe&width=1200");
+    background-image:  url("../media/bg2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
+    overflow: hidden;
 }
 
-.image-child {
+.image-child1 {
     position: absolute;
-    /* left:300px;
-    top:400px; */
-    width: 300px;
-    height: 100px;
+    right:-200px;
+    top:300px;
+    width: 200px;
+    height: 320px;
     background-image:  url("../media/1.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    transition: right 0.5s 0.5s;
 }
+
+@media screen and (min-width:460px)
+{
+     .image-child1 {
+
+        right: 30px;
+        transition: right 0.5s 0.5s;
+    }
+}
+
+.image-child2 {
+    position: absolute;
+    right:-300px;
+    top:250px;
+    width: 300px;
+    height: 200px;
+    background-image:  url("../media/2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: right 0.5s 0.5s;
+}
+
+.sec {
+    top:500px;
+}
+
+@media screen and (min-width:700px)
+{
+    .image-child1 {
+        right: 360px;
+        transition: right 0.5s 0.5s;
+    }
+    .image-child2 {
+        right: 30px;
+        transition: right 0.5s 0.5s;
+    }
+} 
+
+.image-child3 {
+    position: absolute;
+    right:-300px;
+    top:150px;
+    width: 300px;
+    height: 200px;
+    background-image:  url("../media/3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: right 0.5s 0.5s;
+}
+
+.sec3 {
+    top:375px;
+}
+
+.sec4 {
+    top:600px;
+}
+
+@media screen and (min-width:1100px)
+{
+    .image-child1 {
+        right: 690px;
+        transition: right 0.5s 0.5s;
+    }
+    .image-child2 {
+        right: 360px;
+        transition: right 0.5s 0.5s;
+    }
+    .image-child3 {
+        right: 30px;
+        transition: right 0.5s 0.5s;
+    }
+}
+
 
  .arrow {
     object-fit: cover;
@@ -99,6 +175,7 @@ padding-bottom: 40px;
     height: fit-content ;
     flex-wrap: wrap;
     gap: 0.5rem;
+    overflow: hidden;
 }
 
 .div5 .item {
@@ -275,6 +352,11 @@ animation-name: rotate;
     border: 2px solid orange;
     color: antiquewhite;
 }
+
+/* @keyframes example {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+  } */
 
 @media screen and (min-width:460px) 
 {
