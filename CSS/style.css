@@ -18,10 +18,53 @@ html, body {
     position: relative;
     overflow: hidden;
     text-align: center;
-    /* display: flex;
-    justify-content: center; */
+    display: flex;
+    justify-content: center;
+    transition:justify-content 0.5s 1s;
     /* transition: justify-content 0.5s 1s; */
+}
 
+.navbar {
+    display: flex;
+    display: none;
+    width: 70%;
+    height:60px;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    background-color: rgba(97, 93, 93, 0);
+    
+
+}
+
+.inbut {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    border-radius: 2px;
+    color: whitesmoke;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.logincontainer{
+    position: absolute;
+    right: 15px;
+    height: fit-content;
+    width: 100px;
+    /* border: 2px solid red; */
+}
+.login {
+    /* border: 2px solid red; */
+    width: fit-content;
+    height: 60px;
+    right: 10px;
+    color: whitesmoke;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
 }
 
 .textimage {
@@ -31,7 +74,7 @@ html, body {
     align-self:center;
     left: calc(50% - 250px);
     /* border: 2px solid red; */
-    transition: top 0.5s 0.5s, left 0.5s 1s;
+    transition: top 0.5s 0.5s,left 0.5s 1s;
 }
 
 h1 {
@@ -81,7 +124,6 @@ h1 {
 @media screen and (min-width:460px)
 {
      .image-child1 {
-
         right: 30px;
         transition: right 0.5s 0.5s;
     }
@@ -115,9 +157,12 @@ h1 {
     }
 
     .textimage {
-        top:0;
+        top:30px;
         transition: top 0.5s 0.5s;
+    }
 
+    .navbar {
+        display: flex;
     }
 } 
 
