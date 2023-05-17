@@ -11,7 +11,7 @@ html, body {
 .image {
     width: 100wh;
     height: 100vh;
-    background-image:  url("../media/bg2.jpg");
+    background-image:  url("./media/bg2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -126,7 +126,7 @@ h1 {
     top:380px;
     width: 100px;
     height: 160px;
-    background-image:  url("../media/1.png");
+    background-image:  url("./media/1.png");
     background-size: cover;
     background-repeat: no-repeat;
     transition: right 0.5s 0.5s;
@@ -146,7 +146,7 @@ h1 {
     top:250px;
     width: 300px;
     height: 200px;
-    background-image:  url("../media/2.png");
+    background-image:  url("./media/2.png");
     background-size: cover;
     background-repeat: no-repeat;
     transition: right 0.5s 0.5s;
@@ -190,7 +190,7 @@ h1 {
     top:150px;
     width: 300px;
     height: 200px;
-    background-image:  url("../media/3.png");
+    background-image:  url("./media/3.png");
     background-size: cover;
     background-repeat: no-repeat;
     transition: right 0.5s 0.5s;
@@ -243,7 +243,7 @@ h1 {
     margin-bottom:10px ;
     border: 2px solid black;
     width: auto;
-    background-image:  url("../media/4.png");
+    background-image:  url("./media/4.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
